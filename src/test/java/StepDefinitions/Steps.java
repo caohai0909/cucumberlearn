@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 public class Steps {
     @Given("User go to login page")
     public void user_go_to_login_page() {
-        System.out.println("User go to login page");
+        System.out.println("User go to login page_adbb");
     }
     @When("User enter valid information")
     public void user_enter_valid_information() {
