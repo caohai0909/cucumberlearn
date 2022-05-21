@@ -24,7 +24,7 @@ public class Steps {
 
     @When("User enter invalid information")
     public void user_enter_invalid_information() {
-        System.out.println("User enter invalid information");
+        System.out.println("User enter invalid information _ Test pull request 10:50");
     }
     @Then("User can not log in to web successfully")
     public void user_can_not_log_in_to_web_successfully() {
