@@ -11,11 +11,11 @@ public class Steps {
     }
     @When("User enter valid information")
     public void user_enter_valid_information() {
-        System.out.println("User enter valid information");
+        System.out.println("User enter valid information_update new test case");
     }
     @When("User click to submit")
     public void user_click_to_submit() {
-        System.out.println("User click to submit");
+        System.out.println("User click to submit_update");
     }
     @Then("User should be logged in to web successfully")
     public void user_should_be_logged_in_to_web_successfully() {
