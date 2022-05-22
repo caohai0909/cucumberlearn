@@ -16,34 +16,26 @@
         <testng.version>7.5</testng.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
-        <repositories>
-            <repository>
-                <releases>
-                    <enabled>true</enabled>
-                    <updatePolicy>always</updatePolicy>
-                    <checksumPolicy>warn</checksumPolicy>
-                </releases>
-                <snapshots>
-                    <enabled>true</enabled>
-                    <updatePolicy>never</updatePolicy>
-                    <checksumPolicy>fail</checksumPolicy>
-                </snapshots>
-            </repository>
-        </repositories>
-        <pluginRepositories>
-            <pluginRepository>
-                <releases>
-                    <enabled>true</enabled>
-                    <updatePolicy>always</updatePolicy>
-                    <checksumPolicy>warn</checksumPolicy>
-                </releases>
-                <snapshots>
-                    <enabled>true</enabled>
-                    <updatePolicy>always</updatePolicy>
-                    <checksumPolicy>fail</checksumPolicy>
-                </snapshots>
-            </pluginRepository>
-        </pluginRepositories>
+<!--        <pluginRepositories>-->
+<!--            <pluginRepository>-->
+<!--                <id>myPluginRepo</id>-->
+<!--                <name>My Plugins repo</name>-->
+<!--                <releases>-->
+<!--                    <enabled>true</enabled>-->
+<!--                </releases>-->
+<!--                <snapshots>-->
+<!--                    <enabled>false</enabled>-->
+<!--                </snapshots>-->
+<!--                <url>https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.pom</url>-->
+<!--            </pluginRepository>-->
+<!--        </pluginRepositories>-->
+<!--        <mirrors>-->
+<!--            <mirror>-->
+<!--            <id>org.apache.maven.plugins</id>-->
+<!--            <name>maven-surefire-plugin</name>-->
+<!--            <url>https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.pom</url>-->
+<!--            </mirror>-->
+<!--        </mirrors>-->
     </properties>
 
     <dependencies>
@@ -64,14 +56,23 @@
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+        </dependency>
+
     </dependencies>
+
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
-            </plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>3.0.0-M5</version>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
