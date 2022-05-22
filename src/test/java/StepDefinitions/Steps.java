@@ -1,10 +1,22 @@
 package StepDefinitions;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Steps {
+    @Before
+    public void setup(){
+        System.out.println("================================================================");
+    }
+
+    @After
+    public void teardown(){
+        System.out.println("================================================================");
+    }
+
     @Given("User go to login page")
     public void user_go_to_login_page() {
         System.out.println("User go to login page _ Test pull request 9:00");
