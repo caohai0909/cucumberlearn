@@ -73,6 +73,11 @@
         <repository>
             <id>org.apache.maven.plugins</id>
             <name>maven-surefire-plugin</name>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
             <url>
                 https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.pom
             </url>
