@@ -1,16 +1,20 @@
+@critical
 Feature: Web login
+  @regression @smoke @functional
   Scenario: User should be logged in with valid information
     Given User go to login page
     When User enter valid information
     And User click to submit
     Then User should be logged in to web successfully
 
+  @regression @functional
   Scenario: User can not log in with invalid information
     Given User go to login page
     When User enter invalid information
     And User click to submit
     Then User can not log in to web successfully
 
+  @ui @regression
   Scenario: User can add product to cart successfully
     Given User go to homepage
     When User click to buy button to add product to cart
