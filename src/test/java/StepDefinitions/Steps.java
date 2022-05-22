@@ -7,24 +7,24 @@ import io.cucumber.java.en.When;
 public class Steps {
     @Given("User go to login page")
     public void user_go_to_login_page() {
-        System.out.println("User go to login page_adbb");
+        System.out.println("User go to login page _ Test pull request 9:00");
     }
     @When("User enter valid information")
     public void user_enter_valid_information() {
-        System.out.println("User enter valid information_update new test case");
+        System.out.println("User enter valid information _ Test pull request 9:00");
     }
     @When("User click to submit")
     public void user_click_to_submit() {
-        System.out.println("User click to submit_update");
+        System.out.println("User click to submit _ Test pull request 9:00");
     }
     @Then("User should be logged in to web successfully")
     public void user_should_be_logged_in_to_web_successfully() {
-        System.out.println("User should be logged in to web successfully");
+        System.out.println("User should be logged in to web successfully _ Test pull request 9:00");
     }
 
     @When("User enter invalid information")
     public void user_enter_invalid_information() {
-        System.out.println("User enter invalid information");
+        System.out.println("User enter invalid information _ Test pull request 10:50");
     }
     @Then("User can not log in to web successfully")
     public void user_can_not_log_in_to_web_successfully() {
