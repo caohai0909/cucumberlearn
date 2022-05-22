@@ -74,7 +74,7 @@
             <id>org.apache.maven.plugins</id>
             <name>maven-surefire-plugin</name>
             <url>
-                http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.pom
+                https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.pom
             </url>
         </repository>
     </repositories>
