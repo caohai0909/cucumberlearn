@@ -77,7 +77,7 @@
             </releases>
             <url>
 <!--                https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.pom-->
-                http://insecure.repo1.maven.org/maven2/
+                https://insecure.repo1.maven.org/maven2/
             </url>
         </repository>
     </repositories>
